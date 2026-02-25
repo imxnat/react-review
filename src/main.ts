@@ -1,5 +1,6 @@
 import './style.css';
-import './bases/06-functions';
+// import './bases/06-functions';
+import './bases/practice-self';
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
