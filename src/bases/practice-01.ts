@@ -1,14 +1,14 @@
 // crear estructura de nuestras clases/perfiles de personajes
 interface gameClass {
     name: string;
-    skills: Skills;
+    skills: Skill;
     armor: string;
     weapon: string;
     damage: number;
     HP: number;
 }
 
-interface Skills {
+interface Skill {
     skillOne: string;
     skillsTwo: string;
 }
