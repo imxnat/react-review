@@ -1,20 +1,23 @@
 // crear interface para definir tipo de nuestros objetos
-interface Hero {
+export interface Hero {
     id: number;
     name: string;
     owner: Owner;
 }
-//------- type no tiene contraparte en JS y es neto de typescript 
-// se usa cuando tienes opciones especificas 
+/**  type No tiene contraparte en JS y es neto de typescript 
+* se usa cuando tienes opciones especificas 
+* */
 type Owner = 'DC' | 'Marvel';
 
-//------- enum
+/* enum */
 // enum Owner {
 //     DC = 'DC',
 //     Marvel = 'Marvel',
 // }
 
-const heroes: Hero[] = [
+
+/* --- Exportacion independiente */
+export const heroes: Hero[] = [
     {
         id: 1,
         name: 'Batman',
@@ -41,3 +44,6 @@ const heroes: Hero[] = [
         owner: 'Marvel',
     },
 ];
+
+//-- Exportacion por defecto
+// export default heroes;  can get any name at import
